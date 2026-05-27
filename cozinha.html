@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Restaurante dos Pitufos</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+
+    /* fundo azul smurf */
+    background:linear-gradient(135deg,#4da6ff,#8fd3ff);
+
+    color:#fff;
+
+    /* deixa o footer no final */
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+/* ===== TOPO ===== */
+
+.topo{
+    text-align:center;
+    padding:50px 20px 20px;
+}
+
+.topo h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.topo p{
+    font-size:1.1rem;
+}
+
+/* ===== SEÇÃO DOS CARDS ===== */
+
+.chefes{
+    padding:40px 20px 70px;
+
+    /* faz crescer e empurra footer */
+    flex:1;
+}
+
+.grid{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    color:#1a1a1a;
+
+    width:270px;
+    padding:20px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:210px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    margin-bottom:15px;
+}
+
+/* diminui só a primeira imagem */
+
+.card:first-child img{
+    height:160px;
+    object-fit:contain;
+}
+
+.card h3{
+    margin:10px 0 5px;
+    color:#0077cc;
+}
+
+.card p{
+    font-size:0.92rem;
+    opacity:0.85;
+    line-height:1.5;
+}
+
+/* prato favorito */
+
+.prato{
+    margin-top:15px;
+
+    background:#eaf6ff;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    font-size:0.9rem;
+}
+
+.prato strong{
+    color:#0066cc;
+}
+
+/* ===== RODAPÉ ===== */
+
+footer{
+    text-align:center;
+    padding:20px;
+
+    background:rgba(0,0,0,0.15);
+
+    font-size:0.95rem;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- TOPO -->
+
+<section class="topo">
+
+    <h1>Conheça nossa cozinha</h1>
+
+    <p>
+        Os cozinheiros mais famosos da Vila Azul!
+    </p>
+
+</section>
+
+<!-- CARDS -->
+
+<section class="chefes">
+
+    <div class="grid">
+
+        <!-- CARD 1 -->
+
+        <div class="card" >
+
+            <img src="pai.jpg" alt="Papa Pitufo" a>
+
+            <h3>Papa Pitufo</h3>
+
+            <p>
+                Mestre das receitas mágicas e dos pratos tradicionais da vila.
+            </p>
+
+
+
+            <div class="prato">
+                <strong>Prato favorito:</strong><br>
+                Sopa Azul Encantada 🍲
+            </div>
+
+        </div>
+
+        <!-- CARD 2 -->
+
+        <div class="card">
+
+            <img src="Pitufina.jpg" alt="Pitufina">
+
+            <h3>Pitufina</h3>
+
+            <p>
+                Especialista em doces mágicos e sobremesas brilhantes.
+            </p>
+
+            <div class="prato">
+                <strong>Prato favorito:</strong><br>
+                Cupcake de Mirtilo 💙
+            </div>
+
+        </div>
+
+        <!-- CARD 3 -->
+
+        <div class="card">
+
+            <img src="pp.jpg" alt="Pitufo">
+
+            <h3>Pitufo Chef</h3>
+
+            <p>
+                Criador dos pratos especiais mais famosos da floresta.
+            </p>
+
+            <div class="prato">
+                <strong>Prato favorito:</strong><br>
+                Hambúrguer Smurf 🍔
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- RODAPÉ -->
+
+<footer>
+
+    🍴 Restaurante dos Pitufos • Vila Azul
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurante Azul</title>
+
+<style>
+
+body{
+    background-color: #0b1f66;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+}
+
+/* SEÇÕES */
+.secao{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+    background-color: #dbe8ff;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.secao img{
+    width: 390px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.conteudo{
+    width: 100%;
+}
+
+h2{
+    color: #1237c9;
+    font-size: 42px;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+/* FORMULÁRIO */
+
+.formulario-pedido{
+    background-color: #dbe8ff;
+    width: 420px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.formulario-pedido h2{
+    text-align: center;
+    color: #1237c9;
+    margin-bottom: 25px;
+    font-size: 36px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 22px;
+    color: #001b66;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea{
+    padding: 14px;
+    border: 2px solid #4c6fff;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: white;
+}
+
+textarea{
+    height: 100px;
+    resize: none;
+}
+
+button{
+    margin-top: 25px;
+    padding: 16px;
+    background-color: #2457ff;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #1237c9;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- FORMULÁRIO -->
+<div class="formulario-pedido">
+
+    <h2>Faça seu Pedido</h2>
+
+    <form>
+
+        <label>Seu Nome *</label>
+        <input type="text" placeholder="Digite seu nome">
+
+        <label>Seu WhatsApp *</label>
+        <input type="tel" placeholder="(11)99999-9999">
+
+        <label>Escolha o Prato *</label>
+        <select>
+            <option>Escolha aqui</option>
+            <option>Strogonoff Azul</option>
+            <option>Bobó Azul</option>
+            <option>Camarão Azul</option>
+            <option>Lasanha Azul</option>
+        </select>
+
+        <label>Escolha a Bebida *</label>
+        <select>
+            <option>Escolha aqui</option>
+            <option>Milkshake Azul</option>
+            <option>Refrigerante Blue</option>
+            <option>Suco de Mirtilo Azul</option>
+            <option>Coquetel Oceano Azul</option>
+        </select>
+
+        <label>Escolha a Sobremesa</label>
+        <select>
+            <option>Escolha aqui</option>
+            <option>Merengue Azul</option>
+            <option>Bolo Azul</option>
+            <option>Donuts Azul</option>
+        </select>
+
+        <label>Endereço para Entrega *</label>
+        <input type="text" placeholder="Rua, número e bairro">
+
+        <label>Observações</label>
+        <textarea placeholder="Ex: sem cebola, troco para 100..."></textarea>
+
+        <button type="submit">Fazer Pedido</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
