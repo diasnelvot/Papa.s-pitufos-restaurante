@@ -2,15 +2,89 @@
 <html lang="pt-BR">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Azul</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f8ff;
+            color: #333;
+        }
+
+        #cardapio {
+            padding: 40px;
+        }
+
+        .titulo {
+            text-align: center;
+            font-size: 40px;
+            color: #0050aa;
+            margin-bottom: 40px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .secao {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .secao:hover {
+            transform: translateY(-5px);
+        }
+
+        .secao img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .conteudo {
+            padding: 20px;
+        }
+
+        .conteudo h2 {
+            color: #0066cc;
+            margin-bottom: 20px;
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .item:last-child {
+            border-bottom: none;
+        }
+
+        .item span:last-child {
+            font-weight: bold;
+            color: #0050aa;
+        }
+    </style>
+</head>
+
+<body>
 
 <section id="cardapio">
 
-    <h2 class="titulo">Cardapio</h2>
+    <h2 class="titulo">Cardápio</h2>
 
     <div class="container">
 
+        <!-- Entradas -->
         <div class="secao">
 
             <img src="queijos_azuis.jpg" alt="Entradas">
@@ -35,107 +109,121 @@
                 </div>
 
                 <div class="item">
-                    <span>Guacamole e tortilhas Azul</span>
+                    <span>Guacamole e Tortilhas Azul</span>
                     <span>R$ 35</span>
                 </div>
+
             </div>
 
         </div>
 
-       <div class="secao">
-
-    <img src="macarrao.jpg" alt="Pratos">
-
-    <div class="conteudo">
-
-        <h2>Pratos Principais</h2>
-
-        <div class="item">
-            <span>Strogonoff Azul</span>
-            <span>R$ 40</span>
-        </div>
-
-        <div class="item">
-            <span>Bobó Azul</span>
-            <span>R$ 67</span>
-        </div>
-
-        <div class="item">
-            <span>Camarão Azul</span>
-            <span>R$ 87</span>
-        </div>
-
-        <div class="item">
-            <span>Lasanha Azul</span>
-            <span>R$ 87</span>
-        </div>
-
-    </div>
-
-</div>
-
-
-<div class="secao">
-
-    <img src="bolos.jpg" alt="Sobremesas">
-
-    <div class="conteudo">
-
-        <h2>Sobremesas</h2>
-
-        <div class="item">
-            <span>Merengue de mirtilo Azul</span>
-            <span>R$ 25</span>
-        </div>
-
-        <div class="item">
-            <span>Pipoca doce Azul com ninho</span>
-            <span>R$ 20</span>
-        </div>
-
-        <div class="item">
-            <span>Bolo Azul</span>
-            <span>R$ 48</span>
-        </div>
-
-        <div class="item">
-            <span>Donuts Azul</span>
-            <span>R$ 35</span>
-        </div>
-
-    </div>
-
-</div>
+        <!-- Pratos -->
         <div class="secao">
 
-    <img src="bebida.jpg" alt="Bebidas">
+            <img src="macarrao.jpg" alt="Pratos Principais">
 
-    <div class="conteudo">
+            <div class="conteudo">
 
-        <h2>Bebidas</h2>
+                <h2>Pratos Principais</h2>
 
-        <div class="item">
-            <span>Milkshake Azul</span>
-            <span>R$ 22</span>
+                <div class="item">
+                    <span>Strogonoff Azul</span>
+                    <span>R$ 40</span>
+                </div>
+
+                <div class="item">
+                    <span>Bobó Azul</span>
+                    <span>R$ 67</span>
+                </div>
+
+                <div class="item">
+                    <span>Camarão Azul</span>
+                    <span>R$ 87</span>
+                </div>
+
+
+   <div class="item">
+                    <span>Sushi Azul</span>
+                    <span>R$ 87</span>
+                </div>
+                <div class="item">
+                    <span>Lasanha Azul</span>
+                    <span>R$ 87</span>
+                </div>
+
+            </div>
+
         </div>
 
-        <div class="item">
-            <span>Drinks azuis (alcoólicos e não alcoólicos)</span>
-            <span>R$ 12</span>
+        <!-- Sobremesas -->
+        <div class="secao">
+
+            <img src="bolos.jpg" alt="Sobremesas">
+
+            <div class="conteudo">
+
+                <h2>Sobremesas</h2>
+
+                <div class="item">
+                    <span>Merengue de Mirtilo Azul</span>
+                    <span>R$ 25</span>
+                </div>
+
+                <div class="item">
+                    <span>Pipoca Doce Azul com Ninho</span>
+                    <span>R$ 20</span>
+                </div>
+
+                <div class="item">
+                    <span>Bolo Azul</span>
+                    <span>R$ 48</span>
+                </div>
+
+                <div class="item">
+                    <span>Donuts Azul</span>
+                    <span>R$ 35</span>
+                </div>
+
+            </div>
+
         </div>
 
-        <div class="item">
-            <span>Suco Azul</span>
-            <span>R$ 18</span>
-        </div>
+        <!-- Bebidas -->
+        <div class="secao">
 
-        <div class="item">
-            <span>Coquetel Oceano Azul</span>
-            <span>R$ 30</span>
+            <img src="bebida.jpg" alt="Bebidas">
+
+            <div class="conteudo">
+
+                <h2>Bebidas</h2>
+
+                <div class="item">
+                    <span>Milkshake Azul</span>
+                    <span>R$ 22</span>
+                </div>
+
+                <div class="item">
+                    <span>Drinks Azuis</span>
+                    <span>R$ 12</span>
+                </div>
+
+                <div class="item">
+                    <span>Suco Azul</span>
+                    <span>R$ 18</span>
+                </div>
+
+                <div class="item">
+                    <span>Coquetel Oceano Azul</span>
+                    <span>R$ 30</span>
+                </div>
+
+            </div>
+
         </div>
 
     </div>
 
-</div>        
 </section>
-         
+
+</body>
+</html>
