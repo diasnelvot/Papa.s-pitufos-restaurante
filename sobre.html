@@ -130,11 +130,11 @@
 
                 <div class="sobre-texto">
 
-                    <span class="badge">Nossa História</span>
+                    <span class="badge">Nossa História que vai muito alem do dinheiro.</span>
 
                     <p>
-                        Este site foi desenvolvido por <strong>Tainara Dias Nelvo</strong>,
-                        na disciplina de Engenharia de Software, como parte de um projeto acadêmico.
+                        Este site foi desenvolvido por <strong>Tainara Dias Nelvo </strong>,
+                        na disciplina de  <strong>Engenharia de Software </strong>, como parte de um projeto acadêmico.
                     </p>
 
                     <br>
@@ -148,7 +148,7 @@
                     <br>
 
                     <p>
-                        Hoje, o restaurante é referência na região, conhecido pela qualidade,
+                        Hoje, nosso restaurante <strong>localizado na frente da torre eiffel</strong> é referência na região, conhecido pela qualidade,
                         apresentação impecável e experiências únicas à mesa.
                     </p>
 
@@ -159,6 +159,63 @@
         </div>
 
     </section>
+ 
+<!-- SMURF ANIMADO -->
+<img src="https://embroideres.com/files/cache/6fe8fb8238a7896cf83dbb0bfa3f4a61_f35253.jpg"
+     alt="Smurf"
+     class="smurf">
+
+<style>
+
+.smurf{
+    position: fixed;
+
+    bottom: 20px;
+    right: 20px;
+
+    width: 120px;
+
+    z-index: 999;
+
+    animation:
+        flutuar 3s ease-in-out infinite,
+        girar 8s linear infinite;
+}
+
+/* animação subindo e descendo */
+@keyframes flutuar {
+
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-15px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+/* rotação leve */
+@keyframes girar {
+
+    0%{
+        rotate: -3deg;
+    }
+
+    50%{
+        rotate: 3deg;
+    }
+
+    100%{
+        rotate: -3deg;
+    }
+}
+
+</style>
+
 
 </body>
 
